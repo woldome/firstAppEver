@@ -1,0 +1,23 @@
+$red: #ff0000;
+.myApp
+{
+    width:45px;
+    height:45px;
+    margin: auto;
+    background-color:black;
+    animation: rot 3s linear infinite forwards;
+    position: absolute;
+    top:50%;
+    left:50%;
+    @keyframes rot
+    {
+        0%
+        {
+            transform: translate(-50%,-50%) rotate(0deg)
+        }
+        100%
+        {
+            transform: translate(-50%,-50%) rotate(360deg)
+        }
+    }
+}
